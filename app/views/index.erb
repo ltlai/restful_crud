@@ -1,0 +1,21 @@
+<h1>Welcome to Notes!</h1>
+
+<div id="add">
+  <form action="/" method="post">
+    Title: <input name="title"></textarea>
+    Note: <textarea name="content"></textarea>
+    <input type="submit" value="Add a note!">
+  </form>
+</div>
+
+<% @notes.each do |note| %>
+  <p>
+    <b><%= note.title %></b>
+    <span><a href="/<%= note.id %>">[edit]</a></span>
+    <span><a href="/<%= note.id %>/delete">[delete]</a></span>
+  </p>
+  <p>
+    <%= note.content %>
+  </p>
+  <div>============================================</div>
+<% end %>
