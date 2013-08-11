@@ -1,8 +1,21 @@
+body {
+  background-color: #c9fdca;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 650px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 2px solid black;
+  background-color: #d0e5fb;
 }
 th {
   text-align: left;

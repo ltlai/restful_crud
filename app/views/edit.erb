@@ -1,9 +1,13 @@
+<h1>Edit your note!</h1>
+
 <% if @note %>
   <form action="/<%= @note.id %>" method="post" id="edit">
     <input type="hidden" name="_method" value="put">
     Title: <textarea name="title"><%= @note.title %></textarea>
     Note: <textarea name="content"><%= @note.content %></textarea>
     <input type="submit" value="Edit note">
+    <br><br>
+    <a href="/">Cancel</a>
   </form>
 <% else %>
   <p>Note not found.</p>
